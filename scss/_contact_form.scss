@@ -1,0 +1,154 @@
+.contact__form.container {
+  padding: 50px;
+
+  @media screen and (min-width: 998px) {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  article {
+    @media screen and (min-width: 998px) {
+      width: 35%;
+      margin-right: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+  }
+
+  h4 {
+    font-size: 40px;
+    font-family: $fontRaleway;
+    font-weight: 400;
+    text-align: left;
+    @media screen and (min-width: 998px) {
+      width: 100%;
+    }
+  }
+
+  p {
+    text-align: left;
+    font-size: 16px;
+    padding: 20px 0;
+    @media screen and (min-width: 998px) {
+      width: 100%;
+    }
+  }
+}
+
+.send__email {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 998px) {
+    width: 35%;
+  }
+
+  & > label {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: $mainColor1;
+    font-weight: 700;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  & > input {
+    border: none;
+    border-bottom: 2px solid #a5a5a5;
+    width: 100%;
+    margin-bottom: 10px;
+    text-indent: 5px;
+    font-size: 14px;
+    background-color: #ffffff;
+    height: 40px;
+  }
+
+  & > input:focus,
+  & > input:valid {
+    outline: none;
+    border-bottom: 2px solid #08a6e4;
+    background-color: #ffffff;
+  }
+}
+.email,
+.phone {
+  padding-bottom: 20px;
+  margin-right: 15px;
+  img {
+    position: relative;
+    top: 7px;
+  }
+  a,
+  span {
+    font-size: 16px;
+    color: #a5a5a5;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+.agree {
+  font-size: 12px;
+  color: #707070;
+  font-weight: 400;
+  //   padding-left: 10px;
+  line-height: 17px;
+}
+
+.form__agree {
+  margin-top: 20px;
+  display: flex;
+}
+
+.form__submit {
+  background-color: $mainColor1;
+  color: #ffffff;
+  border: none;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 20px 80px;
+  border-radius: 35px;
+  margin: 20px 0 50px 0;
+  align-self: flex-end;
+
+  &:active {
+    box-shadow: 5px 10px 14px #07ace629;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: darken($mainColor1, 7%);
+  }
+}
+
+//checkbox styles
+
+.send__email .checkbox__agree {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border: 1px solid #95989a;
+  border-radius: 4px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.send__email .checkbox__agree:checked::after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/Checkmark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+}
