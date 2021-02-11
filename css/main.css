@@ -140,6 +140,10 @@ table {
   font-family: "Open Sans";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1266px;
   margin: 0 auto;
@@ -259,6 +263,7 @@ table {
   border-bottom: 4px solid #09a9e3;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+  color: #000000;
 }
 
 .navigation__menu__item a:hover {
@@ -563,7 +568,7 @@ table {
 }
 
 .section2 .container {
-  padding: 30px 30px 100px 30px;
+  padding: 100px 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -984,12 +989,12 @@ li.offer__excluded::before {
 }
 
 .contact__form.container {
-  padding: 50px;
+  padding: 100px 50px;
 }
 
 @media screen and (min-width: 998px) {
   .contact__form.container {
-    padding: 50px 20px;
+    padding: 100px 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

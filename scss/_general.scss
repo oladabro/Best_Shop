@@ -5,6 +5,10 @@
   font-family: $fontOpenSans;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: $max-width;
   margin: 0 auto;
