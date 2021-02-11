@@ -1,6 +1,7 @@
 const menuLi = document.querySelector('.navigation__menu');
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelectorAll('.navigation__menu__item a');
+const navItems = document.querySelectorAll('.navigation__menu__item');
 
 const navSlide = () => {
   burger.addEventListener('click', () => {
@@ -8,7 +9,7 @@ const navSlide = () => {
     menuLi.classList.toggle('nav__active');
     burger.classList.toggle('active');
     //animate links
-    navLinks.forEach((link, index) => {
+    navItems.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = '';
       } else {
