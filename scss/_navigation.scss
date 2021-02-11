@@ -24,6 +24,7 @@
 
 .navigation__menu {
   display: flex;
+  height: 100%;
 
   @media screen and (max-width: 1025px) {
     display: block;
@@ -36,7 +37,6 @@
     width: 100%;
     box-shadow: 0px 3px 6px #00000029;
     transform: translateY(-100%);
-
     z-index: -1;
     transition: transform 0.5s ease-in;
   }
@@ -46,28 +46,45 @@
   display: flex;
   align-self: center;
   transition: all 0.3s linear;
+  height: 100%;
 
   @media screen and (max-width: 1025px) {
     flex-direction: column;
   }
+}
+
+.navigation__menu__item {
+  padding: 0 15px;
+  opacity: 0;
+  display: flex;
+  align-self: center;
+  @media screen and (min-width: 1025px) {
+    opacity: 1;
+  }
 
   a {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: 800;
     text-transform: uppercase;
     color: #a5a5a5;
-    letter-spacing: 1.7px;
+    letter-spacing: 1.2px;
+    height: 100%;
+    padding: 28px 12px;
+    border-bottom: 4px solid transparent;
+  }
+
+  a.active {
+    border-bottom: 4px solid $mainColor1;
+    transition: 0.3s linear;
   }
 
   a:hover {
     color: #000000;
+    height: 100%;
     cursor: pointer;
   }
 }
-
-// .menu__hide {
-//   visibility: hidden;
-// }
 
 .burger {
   cursor: pointer;
@@ -85,14 +102,6 @@
 @media screen and (min-width: 1025px) {
   .burger {
     display: none;
-  }
-}
-
-.navigation__menu__item {
-  margin: 15px 15px;
-  opacity: 0;
-  @media screen and (min-width: 1025px) {
-    opacity: 1;
   }
 }
 
