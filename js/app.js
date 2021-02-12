@@ -6,7 +6,7 @@ const form = document.querySelector('form');
 
 
 // dodaj nasłuchiwanie na burgera
-window.addEventListener('DOMContentLoaded', navSlide);
+// window.addEventListener('DOMContentLoaded', navSlide);
 
 
 //show  menu when clicked on hamburger
@@ -29,6 +29,7 @@ const navSlide = () => {
     });
   });
 };
+navSlide();
 
 // add style to active menu item
 
