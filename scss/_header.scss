@@ -1,11 +1,12 @@
 .header {
   height: 100vh;
   background-image: url('../assets/Background.png');
-  background-position: bottom;
+  background-position: 50% 113%;
   background-repeat: no-repeat;
   background-size: auto 50vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .header__container {
   display: flex;
@@ -14,6 +15,10 @@
   position: relative;
   top: 170px;
   margin: 0 25px;
+
+  @media (min-width: 768px) {
+    top: 220px;
+  }
 }
 
 .header__title {
@@ -41,4 +46,10 @@
   font-weight: 700;
   font-size: 16px;
   margin-top: 35px;
+  transition: 0.1s;
+
+  &:hover {
+    background-color: darken($mainColor1, 8%);
+    transition: 0.1s;
+  }
 }

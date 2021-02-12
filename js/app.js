@@ -11,32 +11,38 @@ const navSlide = () => {
     //toggle class
     menuLi.classList.toggle('nav__active');
     burger.classList.toggle('active');
+
     //animate links
     navItems.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = '';
       } else {
-        link.style.animation = `navLinkZoom 0.5s ease forwards ${
-          index / 5 + 0.5
+        link.style.animation = `navLinkZoom 0.3s linear forwards ${
+          index / 9 + 0.3
         }s`;
       }
     });
   });
 };
 
-// hide menu when clicked outside
-
 // add style to active menu item
 
 const addStyleToActiveMenuItem = (event) => {
-  // if (menuLi.classList.contains('nav__active')) {
-  //   menuLi.classList.toggle('nav__active');
-  // }
-
   navLinks.forEach((el) => {
     el.classList.remove('active');
   });
   event.target.classList.add('active');
+
+  // hide menu when clicked outside
+  if (window.innerWidth < 1025) {
+    menuLi.classList.toggle('nav__active');
+    burger.classList.toggle('active');
+    navItems.forEach((link) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      }
+    });
+  }
 };
 
 navLinks.forEach((el) => {

@@ -38,14 +38,14 @@
     box-shadow: 0px 3px 6px #00000029;
     transform: translateY(-100%);
     z-index: -1;
-    transition: transform 0.5s ease-in;
+    transition: transform 0.3s ease;
   }
 }
 
 .navigation__menu__list {
   display: flex;
   align-self: center;
-  transition: all 0.3s linear;
+  transition: 0.5s linear;
   // height: 100%;
 
   @media screen and (max-width: 1025px) {
@@ -89,7 +89,6 @@
 
   a:hover {
     color: #000000;
-    // height: 100%;
     cursor: pointer;
   }
 }

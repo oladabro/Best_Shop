@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     @media screen and (min-width: 768px) {
-      width: 50%;
+      // width: 50%;
     }
 
     img {
@@ -15,7 +15,12 @@
       height: 120px;
 
       @media screen and (min-width: 768px) {
-        width: 200px;
+        height: 160px;
+        margin: 30px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        height: 200px;
         margin: 30px;
       }
     }
@@ -36,8 +41,8 @@
     @media screen and (min-width: 768px) {
       width: 130px;
       height: 130px;
-      right: 35px;
-      top: 20px;
+      right: 25px;
+      top: 25px;
     }
   }
 
@@ -64,7 +69,7 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    max-width: 80vw;
+    max-width: 90vw;
     justify-content: center;
   }
 
@@ -78,11 +83,12 @@
   p {
     font-size: 14px;
     line-height: 1.5em;
+    font-weight: 300;
   }
 
   div {
     @media screen and (min-width: 768px) {
-      width: 40%;
+      width: 45%;
       margin: 0 30px;
     }
   }
@@ -109,7 +115,7 @@
       z-index: 1;
       height: 140px;
       @media screen and (min-width: 768px) {
-        height: 220px;
+        height: 190px;
       }
     }
   }
@@ -133,8 +139,24 @@
   }
 }
 
-// third box
+.section2__special {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+  }
+}
+
 .section2__special__article {
+  @media screen and (min-width: 768px) {
+    width: 65%;
+    margin-right: 30px;
+  }
+  div {
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
+  }
   h3 {
     font-size: 30px;
     font-weight: 400;
@@ -156,15 +178,26 @@
   display: flex;
   justify-content: center;
 
+  @media screen and (min-width: 768px) {
+    padding: 30px 0;
+  }
+
+  @media screen and (min-width: 1100px) {
+    padding: 60px 60px;
+  }
+
   img {
     position: relative;
     top: 25px;
   }
 }
 
-.decoration-line {
-  height: 3px;
-  width: 80px;
+div.decoration-line {
+  @media screen and (min-width: 768px) {
+    height: 3px;
+    width: 80%;
+    margin: 10px 0;
+  }
 }
 .main-color1 {
   background-color: $mainColor1;
