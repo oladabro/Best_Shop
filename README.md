@@ -9,3 +9,10 @@ A responsive one page website as part of Coders Lab workshop
   - desktop (>= 1024px)
 - Smooth scrolling,
 - Animations (hamburger and drop-down menu)
+
+## Technologies
+
+- JS
+- SCSS, RWD
+- HTML, CSS
+
