@@ -1,6 +1,8 @@
 # Best Shop
 A responsive one page website as part of Coders Lab workshop
 
+<a href="https://oladabro.github.io/Best_Shop/">Click to see demo</a>
+
 ## Features
 
 - Responsive Web Design, breakpoints at:
