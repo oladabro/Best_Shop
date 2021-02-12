@@ -18,7 +18,7 @@
 
 .navigation__logo a {
   text-decoration: none;
-  color: $logoColor;
+  color: #08a6e4;
   font-size: 26px;
 }
 
@@ -26,7 +26,7 @@
   display: flex;
   // height: 100%;
 
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1023px) {
     display: block;
     list-style: none;
     position: absolute;
@@ -46,9 +46,8 @@
   display: flex;
   align-self: center;
   transition: 0.5s linear;
-  // height: 100%;
 
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1023px) {
     flex-direction: column;
   }
 }
@@ -56,9 +55,8 @@
 .navigation__menu__item {
   padding: 15px 15px;
   opacity: 0;
-  // display: flex;
-  // align-self: center;
-  @media screen and (min-width: 1025px) {
+
+  @media screen and (min-width: 1024px) {
     opacity: 1;
   }
 
@@ -73,7 +71,7 @@
     padding: 23px 12px;
     border-bottom: 4px solid transparent;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1023px) {
       font-weight: 400;
       font-size: 12px;
       padding: 0px 5px;
@@ -106,7 +104,7 @@
   transition: all 0.3s ease;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .burger {
     display: none;
   }

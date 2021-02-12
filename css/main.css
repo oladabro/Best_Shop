@@ -192,7 +192,7 @@ html {
   display: flex;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1023px) {
   .navigation__menu {
     display: block;
     list-style: none;
@@ -224,7 +224,7 @@ html {
   transition: 0.5s linear;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1023px) {
   .navigation__menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -238,7 +238,7 @@ html {
   opacity: 0;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .navigation__menu__item {
     opacity: 1;
   }
@@ -256,7 +256,7 @@ html {
   border-bottom: 4px solid transparent;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .navigation__menu__item a {
     font-weight: 400;
     font-size: 12px;
@@ -291,7 +291,7 @@ html {
   transition: all 0.3s ease;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .burger {
     display: none;
   }
@@ -358,6 +358,16 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-size: auto 60vh;
+    background-position: 50% 120%;
+  }
 }
 
 .header__container {
@@ -371,14 +381,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  top: 170px;
-  margin: 0 25px;
+  margin: 0 25px 50px;
 }
 
 @media (min-width: 768px) {
   .header__container {
-    top: 220px;
+    margin: 0 25px 100px;
   }
 }
 
@@ -814,7 +822,7 @@ html {
 
 .section3 {
   width: 100%;
-  padding: 20px;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -844,7 +852,7 @@ html {
   font-size: 42px;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  margin-bottom: 40px;
+  margin: 20px 0 40px;
 }
 
 @media screen and (min-width: 768px) {
