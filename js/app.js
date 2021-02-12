@@ -4,6 +4,11 @@ const navLinks = document.querySelectorAll('.navigation__menu__item a');
 const navItems = document.querySelectorAll('.navigation__menu__item');
 const form = document.querySelector('form');
 
+
+// dodaj nasłuchiwanie na burgera
+window.addEventListener('DOMContentLoaded', navSlide);
+
+
 //show  menu when clicked on hamburger
 
 const navSlide = () => {
@@ -54,5 +59,4 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
 });
 
-// dodaj nasłuchiwanie na burgera
-window.addEventListener('DOMContentLoaded', navSlide);
+
